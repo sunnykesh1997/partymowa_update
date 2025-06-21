@@ -1,0 +1,168 @@
+.themes{
+  margin: 30px 0;
+  color: #fff;
+}
+.theme-header{
+  text-align: center;
+  margin: 10px 0;
+}
+.theme-header h3{
+  font-size: 24px;
+  font-weight: 500;
+  color: #7409f6;
+  margin: 20px 0;
+  
+}
+.theme-header h1{
+  color: black;
+  font-size: 44px;
+  font-weight: 500;
+ margin-bottom: 50px;
+}
+.theme-type-list{
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.themes-bg{
+  background: #7409f6;
+  width: 450px;
+  height: auto;
+  border-radius: 20px;
+  padding: 30px 0;
+  box-shadow: 0 5px 30px #9c9c9c;
+}
+.themes-bg h2{
+  color: #ed71fd;
+}
+.theme-image{
+  display: flex;
+  align-items: center;
+  padding: 30px;
+ 
+}
+.theme-image img{
+  width: 100%;
+  border-radius: 30px;
+}
+.prices p{
+  padding: 0 20px;
+  margin: 20px 0;
+}
+.prices strong{
+  color: #e77ff5;
+}
+.prices span{
+  padding: 0 20px;
+  margin: 20px 0;
+}
+.theme-btn button{
+  background: #fff;
+  border: none;
+  outline: none;
+  padding: 12px 50px;
+  border-radius: 50px;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.theme-btn button:hover{
+  background: #b377fc;
+  color: #fff;
+}
+.theme-type-list .themes-bg:nth-child(3) .prices span {
+  display: none;
+}
+@media (max-width: 768px) {
+  .themes {
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  .theme-header {
+    margin: 5px 0;
+  }
+
+  .theme-header h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .theme-header h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .theme-type-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .themes-bg {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .themes-bg h2 {
+    font-size: 20px;
+  }
+
+  .theme-image {
+    padding: 20px;
+  }
+
+  .theme-image img {
+    border-radius: 15px;
+  }
+
+  .prices p, 
+  .prices span {
+    padding: 0 10px;
+    margin: 10px 0;
+  }
+
+  .theme-btn button {
+    padding: 10px 30px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
+
+
+/* Stylish input date picker */
+.date-picker {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.date-picker label {
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.date-picker input[type="date"] {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #7409f6;
+  border-radius: 10px;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.date-picker input[type="date"]:focus {
+  border-color: #ed71fd;
+  box-shadow: 0 0 8px rgba(237, 113, 253, 0.4);
+}
+
+.date-picker input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(35%) sepia(58%) saturate(2965%) hue-rotate(264deg) brightness(97%) contrast(101%);
+  cursor: pointer;
+}
+

@@ -1,0 +1,217 @@
+.booking-page{ 
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 50px;
+  margin: 30px 0;
+}
+.booking-theme-image img{
+  width: 100%;
+  height: 500px;
+  border-radius: 30px;
+}
+.theme-info {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 10px; /* Space between items */
+  margin: 30px 0;
+}
+.theme-info h2 {
+  font-size: 2rem; /* Adjust size as needed */
+  text-align: center; /* Center text */
+  color: #7409f6; /* Theme color */
+  margin: 0; /* Remove unnecessary margins */
+}
+
+.booking-form{
+  width: 100%;
+  height: auto;
+  background: #7409f6;
+  padding: 30px 20px;
+  color: #fff;
+  border-radius: 20px;
+}
+.booking-form h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+form {
+  width: 100%;
+  max-width: 100%; /* Ensure no restrictions */
+  padding: 15px; /* Optional for spacing */
+  box-sizing: border-box;
+}
+form label{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form input{
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 20px;
+}
+.slot-buttons{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 8px;
+}
+.slot-buttons button{
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.slot-buttons button.selected{
+  background: #ed71fd;
+  color: #fff;
+}
+.booking-form p{
+  margin: 10px 0;
+}
+form label select{
+  width: 100%;
+  height: 50px;
+  margin-top: -5px;
+}
+form button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 10px 50px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+form button:hover{
+  background: #c18eff;
+  color: white;
+}
+.form-select, .form-field {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px; /* Adjust gap as needed */
+ margin: 10px 0;
+}
+
+.form-select label select,
+.form-field label input {
+  width: 100%; /* Ensure full width */
+  max-width: none; /* Prevent any max-width constraints */
+  box-sizing: border-box; /* Include padding and border in width */
+  border-radius: 10px;
+}
+
+.price{
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+/* Mobile View Styles */
+@media (max-width: 768px) {
+  .booking-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 15px 0;
+  }
+
+  .booking-theme-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  .theme-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin: 15px 0;
+  }
+
+  .theme-info h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #7409f6;
+  }
+
+  .booking-form {
+    width: 95%;
+    padding: 20px 15px;
+    border-radius: 12px;
+  }
+
+  .booking-form h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  form {
+    gap: 12px;
+    padding: 15px;
+  }
+
+  form label {
+    gap: 5px;
+    font-size: 0.9rem;
+  }
+
+  form input,
+  form label select {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .slot-buttons {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .slot-buttons button {
+    font-size: 0.85rem;
+    height: 35px;
+  }
+
+  form button {
+    padding: 10px 30px;
+    font-size: 0.9rem;
+    margin-top: 15px;
+  }
+
+  .price {
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .form-select,
+  .form-field {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .form-select label select,
+  .form-field label input {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+
+

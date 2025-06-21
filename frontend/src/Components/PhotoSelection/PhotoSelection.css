@@ -1,0 +1,42 @@
+.photo-selection-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.photo-selection-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.photo-selection-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+  width: 200px;
+  text-align: center;
+}
+
+.photo-selection-box.selected {
+  border-color: #007BFF;
+  background-color: #f0f8ff;
+}
+
+.photo-selection-price {
+  margin-top: 20px;
+}
+
+.next-btn {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.next-btn:hover {
+  background-color: #0056b3;
+}

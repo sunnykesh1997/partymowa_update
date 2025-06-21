@@ -1,0 +1,32 @@
+.location-map h1{
+ font-weight: 500;
+ color: #7409f6;
+ margin-bottom: 20px;
+}
+.location-map iframe{
+  border: none;
+  outline: none;
+  margin-bottom: 50px;
+  border-radius: 30px;
+}
+@media (max-width: 768px) {
+  .location {
+    padding: 10px;
+  }
+
+  .location-map h1 {
+    font-size: 24px; /* Adjust font size for mobile */
+    text-align: center; /* Center align for better presentation */
+    margin-bottom: 15px;
+  }
+
+  .location-map iframe {
+    width: 100%; /* Ensure the iframe fits the screen width */
+    height: 300px; /* Adjust height for smaller screens */
+    border-radius: 20px; /* Slightly smaller border radius */
+  }
+
+  .container {
+    padding: 0 15px; /* Add some padding for better spacing */
+  }
+}

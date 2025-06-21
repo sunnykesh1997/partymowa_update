@@ -1,0 +1,129 @@
+.testimonial{
+  background: #f6f6f6;
+  text-align: center;
+  padding: 50px 30px; 
+  margin: 0;
+  width: 100%;  
+  box-sizing: border-box;
+}
+.testimonial h4{
+  color: #7409f6;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.testimonial h1{
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.testimonial-slider .slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-review-content {
+  width: 100%; /* Ensures the content scales appropriately */
+  max-width: 90%;
+  height: 300px; /* Restricts maximum size for consistent design */
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin:0 auto; /* Adds spacing between slides */
+  transition: transform 0.3s ease;
+}
+
+.testimonial-review-content:hover {
+  transform: translateY(-10px);
+}
+.testimonial-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  color: #000;
+}
+.testimonial-title h4{
+  font-size: 16px;
+}
+.review-stars{
+  text-align: left;
+  font-size: 16px;
+  color: #feb519;
+}
+.review-text{
+  text-align: left;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .testimonial {
+    padding: 30px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .testimonial h1 {
+    font-size: 28px; /* Reduce font size for better fit */
+    margin-bottom: 30px; /* Reduce margin for spacing */
+  }
+
+  .testimonial h4 {
+    font-size: 18px;
+    margin-bottom: 15px; 
+  }
+
+  .testimonial-slider .slick-slide {
+    display: block; /* Ensure slides stack on smaller screens */
+    margin: 0 auto; /* Center the slides */
+  }
+
+  .testimonial-review-content {
+    width: 50%; /* Full width for small screens */
+    max-width: 50%; /* Add a small margin for better spacing */
+    height: 90%; /* Allow content to grow naturally */
+     /* Reduce padding for better fit */
+  }
+
+  .testimonial-title h4 {
+    font-size: 14px; /* Smaller text size for smaller screens */
+  }
+
+  .testimonial-title p {
+    font-size: 12px; /* Smaller date font size */
+  }
+
+  .review-stars {
+    font-size: 14px; /* Adjust star size for better fit */
+  }
+
+  .review-text {
+    font-size: 14px; /* Slightly smaller review text size */
+  }
+}
+@media (max-width: 360px) {
+  .testimonial h1 {
+    font-size: 24px; /* Reduce heading font size further */
+    line-height: 1.3; /* Adjust line height for readability */
+  }
+
+  .testimonial-review-content {
+    padding: 10px; /* Compact padding */
+    border-radius: 10px; /* Smaller border radius */
+  }
+
+  .testimonial-title h4 {
+    font-size: 12px; /* Smaller text for very small screens */
+  }
+
+  .testimonial-title p {
+    font-size: 10px; /* Adjust date font size further */
+  }
+
+  .review-text {
+    font-size: 12px; /* Compact review text size */
+  }
+
+  .review-stars {
+    font-size: 12px; /* Adjust star size further */
+  }
+}

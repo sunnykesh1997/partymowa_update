@@ -1,0 +1,190 @@
+.knowmore{
+  background-image: url(../../assets/background.png);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  margin-bottom: 100px;
+}
+
+.knowmore-video>a{
+  margin: 80px 0;
+  position: relative;
+}
+.play-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px; 
+  height: 80px; 
+  background-color: #7409f6; 
+  border-radius: 50%;
+  color: #fff; 
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.play-icon::before{
+  position: absolute;
+  content: '';
+  top: -10;
+  left: -10;
+  width: 100px;
+  height: 100px;
+  background: #696767;
+  opacity: 0.2;
+  border-radius: 50%;
+  transition: all ease 0.4s;
+  animation: 5s ripple2 linear infinite;
+}
+.play-icon::after{
+  position: absolute;
+  content: '';
+  top: -10;
+  left: -10;
+  width: 130px;
+  height: 130px;
+  background: #696767;
+  opacity: 0.2;
+  border-radius: 50%;
+  transition: all ease 0.4s;
+    animation: 5s ripple2 linear infinite;
+}
+@keyframes ripple2 {
+  0%{
+    transform: scale(1);
+    opacity: 0;
+  }
+  30%{
+    opacity: 0.4;
+  }
+  100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.knowmore-video{
+  color: white;
+}
+.knowmore-video h3{
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.knowmore-video h1{
+  font-size: 42px;
+  font-weight: 600;
+}
+.knowmore-content{
+  display: flex;
+  gap: 150px;
+  align-items: center;
+}
+.register-form{
+  width: 500px;
+  padding: 60px 40px;
+  background: #7409f6;
+  border-radius: 20px;
+  margin-bottom: -100px;
+  margin-top: 50px;
+  color: #fff;
+  text-align: center;
+}
+.register-form p{
+  margin: 10px 0;
+  text-align: center;
+}
+.form-fields input, select{
+  width: 100%;
+  height: 60px;
+  border-radius: 50px;
+  margin-top: 20px;
+  padding: 10px 25px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.form-btn{
+  margin-top: 50px;
+  padding: 15px 50px;
+  border: 4px solid white;
+  border-radius: 50px;
+  background: #7409f6;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* CSS for mobile screens */
+@media only screen and (max-width: 768px) {
+  .knowmore {
+    background-image: url(../../assets/background.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin-bottom: 100px;
+    padding: 20px;
+  }
+
+  .knowmore-content {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .knowmore-video {
+    text-align: center;
+  }
+
+  .knowmore-video h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .knowmore-video h1 {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  .play-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .play-icon::before, 
+  .play-icon::after {
+    width: 80px;
+    height: 80px;
+  }
+
+  .register-form {
+    width: 100%;
+    padding: 40px 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-radius: 15px;
+  }
+
+  .form-fields input, 
+  .form-fields select {
+    height: 50px;
+    margin-top: 15px;
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .form-btn {
+    padding: 12px 30px;
+    margin-top: 30px;
+    font-size: 14px;
+  }
+
+  .register-form h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .register-form p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,62 @@
+.counter{
+  background: #7409f6;
+  margin-bottom: 50px;
+  padding: 50px 0;
+}
+.counter-bar{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin: 30px 0;
+}
+.counter-header{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+}
+.counter-img{
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 20px;
+  font-size: 40px;
+  color: #7409f6;
+  border-radius: 10px;
+}
+.counter-title{
+  font-size: 18px;
+}
+/* Add responsive styles for mobile screens */
+@media (max-width: 768px) {
+  .counter {
+    padding: 30px 10px;
+  }
+
+  .counter-bar {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .counter-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .counter-img {
+    padding: 15px;
+    font-size: 30px;
+  }
+
+  .counter-title {
+    font-size: 16px;
+  }
+
+  .counter-number {
+    font-size: 24px;
+  }
+}

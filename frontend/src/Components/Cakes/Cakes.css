@@ -1,0 +1,76 @@
+.cake-page{
+  background: #7409f6;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+ margin: 30px 0;
+}
+.cake-type{
+  display: flex;
+  gap: 30px;
+  margin: 10px 0;
+}
+.cake-list{
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+.cake-price p{
+  margin: 10px 0;
+}
+.cake-list-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.cake-list-heading h2{
+  text-align: center;
+  margin: 20px 0;
+}
+.cake-list-box img{
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 8px;
+}
+.cake-list-box p strong{
+  color: #840192;
+  
+}
+.cake-list-box p{
+  margin-bottom: 10px;
+}
+.cake-quantity{
+  margin: 20px 0;
+}
+.cake-type button{
+  border: none;
+  outline: none;
+  padding: 20px;
+  border-radius: 5px;
+}
+.cake-type button.selected{
+  background: #840192;
+  color: #fff;
+}
+.cake-list-box.selected{
+  background: #84dbfd;
+}
+.next-btn{
+  border: none;
+  outline: none;
+  background: #d67070;
+  margin: 20px 0;
+  padding: 15px 50px;
+  border-radius: 8px;
+}
